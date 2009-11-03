@@ -1,18 +1,16 @@
 RideBoard
 =========
 
-RideBoard is an application that creates a virtual "ride board", of the sort sometimes found in dorms and similar public areas. It is an example application for the OSU CWD/StudioCT Ruby on Rails and Web Development group to explore working with the Rails framework. The app is meant to provide a service to help students interested in attending the OSU CWD Web Dev Day coordinate rides to the conference.
+RideBoard is an application that creates a virtual "ride board", of the sort sometimes found in dorms and similar public areas. It is an example application for the OSU CWD/StudioCT Ruby on Rails and Web Development group to explore working with the Rails framework. The app is meant to provide a service to help students from other universities interested in attending the OSU CWD Web Dev Day coordinate rides to the conference.
 
-(Note: The default Rails README file is still available, and contains plenty of useful (though sometimes outdated) information about working with a Rails app.)
+(Note: The default Rails README file is still available in the repository, and contains plenty of useful (though sometimes outdated) information about working with a Rails app.)
 
-RideBoard User Stories
-----------------------
+###RideBoard User Stories
 
-The following list captures the functionality of the app in XP-style user stories.
+The following list captures the basic functionality of the app in XP-style user stories.
 
-> ### User Story Format
-> User stories, in brief, come in the format, "As a [System Role], I would 
-> like to [perform function], so that [stakeholder value] is achieved.
+> ####User Story Format
+> In brief, "As a [System Role], I would like to [perform function], so that [stakeholder value is achieved]."
 
 - As an Unregistered User, I would like to sign up with a valid .edu email address, so that I can use the app.
 - As a System Owner, I would like registrants to have to verify their email address, so that fraud risk is mitigated and the system is more coherent.
@@ -35,13 +33,12 @@ The following list captures the functionality of the app in XP-style user storie
 - As a Rider, I would like to know if my driver is letting someone squeeze in, so that I can decide whether to continue riding.
 - As a Rider, I would like to peace out of the ride, so that I can notify the driver if I change my mind.
 
-### Nice to haves:
-As a Driver or Rider, I would like to have private messaging.
-As a Driver, I would like the option of including alternative contact info.
-As a Rider, I would like the option of including alternative contact info.
+####Nice to haves:
+- As a Driver or Rider, I would like to have private messaging.
+- As a Driver, I would like the option of including alternative contact info.
+- As a Rider, I would like the option of including alternative contact info.
 
-Email Formats:
---------------
+###Email Formats:
 
 The system should auto-recognize and allow specific .edu addresses. This is currently a partial list.
 
