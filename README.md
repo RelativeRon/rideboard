@@ -45,3 +45,7 @@ The system should auto-recognize and allow specific .edu addresses. This is curr
 * muohio.edu
 * osu.edu
 * ohio-state.edu
+
+###Resources
+
+Free corkboard texture background image: http://enchantedgal-stock.deviantart.com/art/Corkboard-Wood-Cork-Composite-49823242
