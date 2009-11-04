@@ -1,0 +1,23 @@
+html * {
+  font-size: 16px;
+  font-family: Helvetica, 'MS Sans Serif', Arial, sans-serif;
+}
+
+p {
+  font-family: 'Helvetica Neue', Helvetica, 'MS Sans Serif', Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h1,h2,h3,h4 { font-family: Helvetica, 'MS Sans Serif', Arial, sans-serif; }
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+
+.clear { clear: both; }
+
+.left { display: block; float: left; }
+.right { display: block; float: right; }
+
