@@ -1,5 +1,9 @@
 <h1>Listing posts</h1>
 
+<% if signed_in? %>
+  <h3>Hi, <%= current_user.name %>!</h3>
+<% end %>
+
 <table>
   <tr>
     <th>Poster</th>
