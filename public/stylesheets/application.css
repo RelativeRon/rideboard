@@ -21,3 +21,19 @@ h4 { font-size: 18px; }
 .left { display: block; float: left; }
 .right { display: block; float: right; }
 
+div#wrapper {
+  width: 860px;
+}
+div#posts {
+  padding: 10px;
+  float: left;
+  background-color: lightblue;
+  width: 480px;
+}
+
+div#actions {
+  padding: 10px;
+  float: right;
+  background-color: gray;
+  width: 300px;
+}

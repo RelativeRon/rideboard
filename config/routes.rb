@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => :posts, :action => 'index'
   map.resources :posts
+  map.my_posts '/my/posts', :controller => 'posts', :action => 'mine'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
