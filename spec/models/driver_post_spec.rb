@@ -1,13 +1,12 @@
 require 'spec_helper'
 
 describe DriverPost do
-  before(:all) do
-    @user = User.create!(:name => "Test User", :email => "mail@foo.com", :password => 'password', :password_confirmation => 'password')
-  end
+  
+  user = Factory.create(:user)
 
   before(:each) do
     @valid_attributes = {
-      :poster_id => @user.id,
+      :poster_id => user.id,
       :title => "My Cool Title",
       :origin => "Columbus",
       :message => "Suck it."
