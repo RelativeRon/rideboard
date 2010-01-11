@@ -2,7 +2,7 @@
 
 <% form_for(@post, posts_path, :html => { :class => 'formtastic' }) do |f| %>
   <%= f.error_messages %>
-  <fieldset>
+  <fieldset class="inputs">
     <ol>
       <li>
         <%= f.label :title %><br />
