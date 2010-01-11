@@ -8,3 +8,53 @@ For example, to make the inline hint paragraphs a little darker in color than th
 form.formtastic fieldset ol li p.inline-hints { color:#333; }
 
 --------------------------------------------------------------------------------------------------*/
+
+form.formtastic fieldset ol li label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'Knockout', arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#actions form.formtastic fieldset {
+  display: block;
+}
+
+#actions form.formtastic fieldset ol li {
+  float: none;
+  display: block;
+  margin-bottom: 1em;
+  padding-right: 0;
+}
+
+#actions form.formtastic input[type='text'],
+#actions form.formtastic input[type='password'],
+#actions form.formtastic textarea {
+  width: 270px;
+  padding: 3px 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+#actions form.formtastic textarea {
+  font-size: 12px;
+  height: 7em;
+}
+
+#actions form.formtastic fieldset.buttons {
+  padding: 5px 0;
+}
+
+#actions form.formtastic fieldset.buttons .commit input {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 0;
+  color: #fff;
+  font-family: 'Knockout', arial, sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  background: none;
+}

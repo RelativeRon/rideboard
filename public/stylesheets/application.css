@@ -1,39 +1,98 @@
-html * {
-  font-size: 16px;
-  font-family: Helvetica, 'MS Sans Serif', Arial, sans-serif;
+@font-face {
+  font-family: 'Knockout';
+  src: url('/fonts/Knockout.otf') format('opentype');
 }
 
-p {
-  font-family: 'Helvetica Neue', Helvetica, 'MS Sans Serif', Arial, sans-serif;
-  font-size: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+@font-face {
+  font-family: 'JimmyCrackCorn';
+  src: url('/fonts/JimmyCrackCornPro.otf') format('opentype');
 }
 
-h1,h2,h3,h4 { font-family: Helvetica, 'MS Sans Serif', Arial, sans-serif; }
+
+html, body { background: #a96e36 url(/images/cork.jpg);}
+body {
+  font-size: 16px;
+  font-family: 'JimmyCrackCorn', 'Helvetica Neue', Helvetica, 'MS Sans Serif', Arial, sans-serif;
+}
+
+p  { margin: 8px 0; }
 h1 { font-size: 36px; }
 h2 { font-size: 28px; }
 h3 { font-size: 22px; }
 h4 { font-size: 18px; }
 
 .clear { clear: both; }
-
-.left { display: block; float: left; }
+.left  { display: block; float: left; }
 .right { display: block; float: right; }
 
-div#wrapper {
-  width: 860px;
+#wrapper {
+  padding: 90px 65px 20px 65px;
 }
-div#posts {
+
+#navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 47px;
+  padding-left: 65px;
+  line-height: 39px;
+  background: url(/images/navigation_background.png) repeat-x;
+}
+
+#navigation a {
+  color: #fff;
+  font-family: 'Knockout', arial, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+  text-transform: uppercase;
+}
+
+#navigation a.logout {
+  float: right;
+  margin-right: 65px;
+  font-size: 16px;
+}
+
+#posts {
   padding: 10px;
   float: left;
-  background-color: lightblue;
   width: 480px;
 }
 
-div#actions {
-  padding: 10px;
+
+#actions {
   float: right;
-  background-color: gray;
-  width: 300px;
+  width: 276px;
+  padding: 20px 12px 0 12px;
+  color: #fff;
+  background: rgba(0,0,0, 0.4);
+  border-radius:         4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius:    4px;
+}
+
+#actions h1 {
+  margin-bottom: 0.5em;
+  font-family: 'Knockout', arial, sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#actions ul {
+  float: right;
+  padding-bottom: 15px;
+  line-height: 35px;
+}
+
+#actions ul li {
+  display: inline;
+  margin-right: 5px;
+}
+
+#actions ul li a {
+  color: #fff;
+  text-decoration: none;
 }

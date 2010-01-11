@@ -1,17 +1,11 @@
-<div id="wrapper">
-  <div id="actions">
-    <% if signed_in? %>
-      <h3>Hi, <%= current_user.name %>!</h3>
-      <a href="<%= sign_out_path %>">Not <%= current_user.name %>?</a>
-      <%= render :partial => 'add_post.html.erb' %>
-    <% else %>
-      <%= render :partial => 'sessions/sign_in.html.erb' %>
-    <% end %>
-  </div>
-  <div id="posts">
-    <%= posts_header_tag %>
-    <%= posts_view_toggle_link_tag %> 
-    <%= render :partial => 'posts.html.erb', :locals => {:posts => @posts} %>
-  </div>
-  <br class="clear" />
+<div id="actions">
+  <% if signed_in? %>
+    <%= render :partial => 'add_post.html.erb' %>
+  <% else %>
+    <%= render :partial => 'sessions/sign_in.html.erb' %>
+  <% end %>
+</div>
+
+<div id="posts">
+  <%= render :partial => 'posts.html.erb', :locals => {:posts => @posts} %>
 </div>

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
-    <title>RideBoard</title>
+    <title>RideBoard </title>
     <%= javascript_include_tag 'vendor/jquery-1.3.2.js', 'vendor/jquery.always.js', 'vendor/jquery-ui.js' %>
     <%= javascript_include_tag 'vendor/jquery.jaxy.js', 'vendor/jquery.form.js', 'vendor/jquery.mustache.js' %>
     <%= javascript_include_tag 'application' %>
@@ -12,6 +11,12 @@
     <%= yield :head %>
   </head>
   <body>
-    <%= yield %>
+    <div id="navigation">
+      <%= link_to('logout', sign_out_path, :class => 'logout') if signed_in? %>
+      <%= posts_view_toggle_link_tag %>
+    </div>
+    <div id="wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>
