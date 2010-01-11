@@ -69,8 +69,8 @@ h4 { font-size: 18px; }
   height: 175px;
   margin: 0 20px 30px 0;
   background: #fffcaf;
-  -moz-box-shadow:    0 0 8px rgba(0,0,0, 0.75);
-  -webkit-box-shadow: 0 0 8px rgba(0,0,0, 0.75);
+  -moz-box-shadow:    0 1px 6px rgba(0,0,0, 0.9);
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0, 0.9);
 }
 
 #posts .post:nth-child(1n) { background: #a2c9e4; -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); }
