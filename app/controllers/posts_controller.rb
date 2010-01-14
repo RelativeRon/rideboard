@@ -45,10 +45,19 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        flash[:notice] = 'Post was successfully created.'
-        format.html { redirect_to(root_path) }
+        format.html {
+          flash[:notice] = 'Post was successfully created.'
+          redirect_to(root_path)
+        }
+        format.json {
+          render :json => {:message => @post.message, :title => @post.title, :origin => @post.origin}
+        }
       else
         format.html { render :action => "index" }
+        format.json {
+          error_string = @post.errors.full_messages.to_sentence
+          render :json => { :errors => error_string }
+        }
       end
     end
   end
