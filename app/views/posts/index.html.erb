@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'posts' %>
+<% end %>
+
 <div id="actions">
   <% if signed_in? %>
     <%= render :partial => 'add_post.html.erb' %>
@@ -7,5 +11,5 @@
 </div>
 
 <div id="posts">
-  <%= render :partial => 'posts.html.erb', :locals => {:posts => @posts} %>
+  <%= render :partial => 'post', :collection => @posts %>
 </div>

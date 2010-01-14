@@ -50,7 +50,11 @@ class PostsController < ApplicationController
           redirect_to(root_path)
         }
         format.json {
-          render :json => {:message => @post.message, :title => @post.title, :origin => @post.origin}
+          render :json => {
+                 :message => @post.message,
+                 :title => @post.title,
+                 :origin => @post.origin,
+                 :html => render_to_string(:partial => 'posts/post.html.erb', :locals => {:post => @post}) }
         }
       else
         format.html { render :action => "index" }
