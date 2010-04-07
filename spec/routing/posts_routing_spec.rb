@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe PostsController do
   describe "route generation" do
     it "maps #index" do
-      route_for(:controller => "posts", :action => "index").should == "/posts"
+      route_for(:controller => "posts", :action => "index").should == "/"
     end
 
     it "maps #new" do

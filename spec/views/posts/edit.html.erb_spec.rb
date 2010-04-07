@@ -17,7 +17,6 @@ describe "/posts/edit.html.erb" do
     render
 
     response.should have_tag("form[action=#{post_path(@post)}][method=post]") do
-      with_tag('input#post_poster_id[name=?]', "post[poster_id]")
       with_tag('input#post_title[name=?]', "post[title]")
       with_tag('input#post_origin[name=?]', "post[origin]")
       with_tag('textarea#post_message[name=?]', "post[message]")

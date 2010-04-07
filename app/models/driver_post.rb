@@ -1,5 +1,5 @@
 class DriverPost < Post
   def driver
-    self.poster
+    poster
   end
 end

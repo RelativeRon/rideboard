@@ -3,23 +3,16 @@ require 'spec_helper'
 describe DriverPost do
 
   it "should create a new instance given valid attributes" do
-    Factory.build(:driver_post)
+    Factory(:driver_post).should_not be_a_new_record
   end
 
   it "should have a driver" do
-    Factory.build(:driver_post).driver.should_not be_nil
+    DriverPost.new.should respond_to(:driver)
   end
 
-  it "should have a its poster as its driver" do
-    dp = Factory.build(:driver_post)
-    dp.driver.should == dp.poster
-  end
-  
-  it "should have a type of poster" do
-    pending
-  end
-
-  after(:all) do
-    User.delete_all
+  it "should have its poster as its driver" do
+    user = User.new
+    post = DriverPost.new(:poster => user)
+    post.driver.should == user
   end
 end
