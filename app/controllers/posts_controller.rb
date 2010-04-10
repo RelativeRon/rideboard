@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
 
-  layout 'application'
   before_filter :deny_access, :except => [:index, :show], :unless => :signed_in?
 
   expose :post
