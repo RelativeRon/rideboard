@@ -27,3 +27,12 @@ function poll(target, func) {
    }
  });
 }
+
+$.fn.extend({
+  clear: function() {
+    var context = $(this);
+    $('input[type=text], textarea', context).each(function() {
+      this.value = '';
+    });
+  }
+});
